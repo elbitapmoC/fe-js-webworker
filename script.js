@@ -10,7 +10,7 @@ function slowOperation() {
 }
 
 function branchedOperation() {
-  const worker = new Worker("snail.js");
+  const worker = new Worker("offlimits.js");
 }
 
 function sayHello() {
