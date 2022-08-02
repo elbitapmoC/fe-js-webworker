@@ -6,11 +6,11 @@ hello.addEventListener("click", sayHello);
 
 function slowOperation() {
   const worker = new Worker("worker.js");
-  branchedOperation();
+  // branchedOperation();
 }
 
 function branchedOperation() {
-  const worker = new Worker("offlimits.js");
+  const worker = new SharedWorker("offlimits.js");
 }
 
 function sayHello() {
