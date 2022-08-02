@@ -6,6 +6,11 @@ hello.addEventListener("click", sayHello);
 
 function slowOperation() {
   const worker = new Worker("worker.js");
+  branchedOperation();
+}
+
+function branchedOperation() {
+  const worker = new Worker("snail.js");
 }
 
 function sayHello() {
